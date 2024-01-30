@@ -1,0 +1,6 @@
+{
+    "name": "Using fixtures to represent data",
+    "description": "An example JSON fixture file for Cypress tests",
+    "tags": ["Cypress", "fixtures", "testing"]
+  }
+  
