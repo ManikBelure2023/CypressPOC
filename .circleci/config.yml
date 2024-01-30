@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  build-and-bdd_test:
+   docker:
+      - image: cypress/base:14.17.0
+   steps:
+      - checkout
+      - run:
+          name: Install Cypress
+          command: |
+            npm install
+      # - run:
+      #     name: install cypress
+      #     command: |
+      #       npm install cypress --save-dev
+      - run:
+          name: run the spoty-ui-testcase
+          command: |
+            pwd && ls -ll
+            npx cypress run --spec "cypress\e2e\Assignment-1\test-Scenario-1.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
+workflows:
+  test:
+    jobs:
+      - build-and-bdd_test
