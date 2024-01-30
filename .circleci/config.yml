@@ -16,8 +16,25 @@ jobs:
             pwd && ls -ll
             npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-1.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
 
+jobs:
+  build-and-bdd_test-1:
+    docker:
+      - image: cypress/base:14.17.0
+    steps:
+      - checkout
+      - run:
+          name: Install Cypress
+          command: |
+            npm install
+      - run:
+          name: Run the assignment-1-testcase
+          command: |
+            pwd && ls -ll
+            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-5.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
+
 workflows:
   version: 2
   test:
     jobs:
       - build-and-bdd_test
+      - build-and-bdd_test-1
