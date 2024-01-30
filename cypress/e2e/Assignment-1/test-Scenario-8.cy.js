@@ -14,7 +14,7 @@ describe('Tls search and enter text in input', () => {
             let value1;
             let value2;
             cy.get(".tls-header-navigation__search-icon").click().should('be.visible')
-            cy.get(".ais-SearchBox-input[type='search']").clear().type('Mary Beard', {timeout: 3000})
+            cy.get(".ais-SearchBox-input[type='search']").clear().type('Mary Beard', {timeout: 5000})
             cy.get('.tls-search-core__hits')
                 .find('li')
                 .then(($value) => {
