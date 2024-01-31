@@ -46,10 +46,10 @@ jobs:
             pwd && ls -ll
             npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
 
-            
+
 workflows:
   version: 2
-  test:
+  test-assignment:
     jobs:
       - build-and-bdd_test
       - build-and-bdd_test-1
