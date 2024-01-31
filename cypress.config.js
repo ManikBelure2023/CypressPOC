@@ -14,7 +14,7 @@ module.exports = defineConfig({
 
     chromeWebSecurity: false,
     pageLoadTimeout: 150000,
-    // defaultCommandTimeout:80000,
+    defaultCommandTimeout:80000,
 
   },
 });
