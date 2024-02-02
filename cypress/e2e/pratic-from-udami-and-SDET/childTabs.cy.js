@@ -1,29 +1,28 @@
 describe("application", () => {
 
    it("csslocator", () => {
-      cy.visit('https://the-internet.herokuapp.com/windows')// parent window 
-      cy.get('.example>a').invoke('removeAttr', 'target').click()// clicking on link
-      cy.url().should('https://the-internet.herokuapp.com/windows')
-      cy.wait(5000)
-      //operations 
-      cy.go('back')// back to parent window or tab
-
+      cy.visit('https://the-internet.herokuapp.com/windows'); // parent window 
+      cy.get('.example>a').invoke('removeAttr', 'target').click(); // clicking on the link
+      cy.url().should('include', 'https://the-internet.herokuapp.com/windows');
+      cy.wait(5000);
+      // operations 
+      cy.go('back'); // back to the parent window or tab
+    
       // anthor way  for parent to child
       cy.get('.example>a').then((e) => {
          let url = e.prop('href');
          cy.visit(url)
       })
-      cy.url().should('https://the-internet.herokuapp.com/windows')
+      cy.url().should('include','https://the-internet.herokuapp.com/windows')
       cy.wait(5000)
       //operations 
       cy.go('back')// back to parent window or tab
 
    })
-
-   it("different types of dropsown", () => {
+("different types of dropsown", () => {
       //Check boxes
       cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
-      cy.get('#checkBoxOption1').check().should('be.checked').and('have.value', 'option1')
+      cy.get('#checkBoxOption1').check().should('be.checked').and('have.value','option1')
       cy.get('#checkBoxOption1').uncheck().should('not.be.checked')
       cy.get('input[type="checkbox"]').check(['option2', 'option3'])
 
