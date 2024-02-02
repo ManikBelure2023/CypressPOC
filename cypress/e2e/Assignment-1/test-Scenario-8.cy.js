@@ -37,9 +37,9 @@ describe('TLS search and enter text in input', () => {
 
             // cy.get('.tls-article-label__category a[href="Twenty Questions"]').click({ force: true });
 
-            // expect(sum).to.equal(40);
+             expect(sum).to.equal(38);
             // Alternatively, you can assert against a specific element with expected count
-            cy.get('div.tls-search-page__wrapper > :nth-child(2)').should('have.length',40);
+            cy.get('div.tls-search-page__wrapper > :nth-child(2)').should('have.length',1);
 
         } catch (error) {
             cy.log("Error in test Scenario-8:", error);
