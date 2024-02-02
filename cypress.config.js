@@ -8,9 +8,9 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     //for this specpattern to run all the e2e test folder
-     specPattern: 'cypress/e2e/*/*.js', 
+    //  specPattern: 'cypress/e2e/*/*.js', 
     //for this indiviual test folder to execute
-    //specPattern: 'cypress/e2e/Assignment-1/*.js',
+    specPattern: 'cypress/e2e/Assignment-1/*.js',
 
     chromeWebSecurity: false,
     pageLoadTimeout: 150000,
