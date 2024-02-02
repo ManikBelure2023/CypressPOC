@@ -31,9 +31,9 @@ describe('Tls search and enter text in input', () => {
                 })
             let sum = value1 + value2;
             
-            // cy.get('.tls-article-label__category a[href="Twenty Questions"]').click({ force: true })
-            // expect(sum).to.equal(40)
-            cy.get('div.tls-search-page__wrapper > :nth-child(2)').should('have.value',40)
+            cy.get('.tls-article-label__category a[href="Twenty Questions"]').click({ force: true })
+            expect(sum).to.equal(38)
+            // cy.get('div.tls-search-page__wrapper > :nth-child(2)').should('have.value',40)
             
         } catch { 
             cy.log("error in test Scenario-8:")

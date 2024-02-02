@@ -1,4 +1,4 @@
-/// <reference types="cypress"/>
+  /// <reference types="cypress"/>
 describe('UAT Driving Website', () => {
   // runs before every test block
   beforeEach(() => {
