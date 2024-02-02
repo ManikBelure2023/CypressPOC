@@ -38,7 +38,7 @@ describe('TLS website Search Test', () => {
         cy.log("first-date:" + date1);
       });
 
-      cy.get('a[href="https://www.the-tls.co.uk/issues/current-issue/"]').eq(2).click();
+      cy.get('a[href="https://www.the-tls.co.uk/issues/current-issue/"]').eq(2).click({force:true});
 
       cy.get('.tls-issue-date-line').then(($text2) => {
         date2 = $text2.text();
@@ -47,7 +47,7 @@ describe('TLS website Search Test', () => {
 
       expect(date1).to.equal(date2);
     } catch (error) {
-      cy.log('Error in Test Scenario 6:');
+      cy.log('Error in Test Scenario 5:');
     }
   });
 });
