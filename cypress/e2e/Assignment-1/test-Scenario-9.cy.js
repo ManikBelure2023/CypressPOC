@@ -13,7 +13,7 @@
     it('should navigate to the News section and assert', () => {
       try {
         cy.get('[data-index="1"]').should("be.visible")
-        cy.get('.tls-link tls-link--variant-secondary tls-link--theme-default tls-link--size-medium false').should('have.attr','Explore')
+        cy.get('.tls-link tls-link--variant-secondary tls-link--theme-default tls-link--size-medium false').and('have.attr','Explore')
         cy.get(".tls-card-horizontal-large__wrapper-link-img-as-background")
 
       }

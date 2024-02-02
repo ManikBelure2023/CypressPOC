@@ -46,7 +46,7 @@ jobs:
             pwd && ls -ll
             npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
 
-  build-test-09:
+  build-and-bdd_test-3:
     docker:
       - image: cypress/base:14.17.0
     Steps:
@@ -70,5 +70,5 @@ workflows:
       - build-and-bdd_test
       - build-and-bdd_test-1
       - build-and-bdd_test-2
-      - build-test-09
+      - build-and-bdd_test-3
      
