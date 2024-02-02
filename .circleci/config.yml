@@ -59,7 +59,7 @@ jobs:
           name: Run the assignment-3-testcase
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
+            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-8.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
 
 workflows:
   version: 2
