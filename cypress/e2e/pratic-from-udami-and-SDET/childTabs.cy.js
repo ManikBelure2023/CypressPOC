@@ -20,7 +20,7 @@ describe("application", () => {
 
    })
 
-   it.only("different types of dropsown", () => {
+   it("different types of dropsown", () => {
       //Check boxes
       cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
       cy.get('#checkBoxOption1').check().should('be.checked').and('have.value', 'option1')
