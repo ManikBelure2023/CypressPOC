@@ -12,7 +12,7 @@ describe('UAT Driving Website', () => {
   // Test Scenario 1
   it('should navigate to the News section and assert', () => {
     try {
-      cy.get('.menu-main-menu-container > .nav-menu').eq(0).contains('News').click();
+      cy.get('.menu-main-menu-containerrr > .nav-menu').eq(0).contains('News').click();
       cy.get('.sub-menu.row');
     } catch (error) {
       console.error('Error in Test Scenario 1:', error);
