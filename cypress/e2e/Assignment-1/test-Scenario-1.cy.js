@@ -10,7 +10,7 @@ describe('UAT Driving Website', () => {
   });
 
   // Test Scenario 1
-  it('should navigate to the News section and assert', () => {
+  it.only('should navigate to the News section and assert', () => {
     try {
       cy.get('.menu-main-menu-containerrr > .nav-menu').eq(0).contains('News').click();
       cy.get('.sub-menu.row');
@@ -20,7 +20,7 @@ describe('UAT Driving Website', () => {
   });
 
   // Test Scenario 2
-  it.only("Subscribe to TIMES+ should exist", () => {
+  it("Subscribe to TIMES+ should exist", () => {
     try {
       cy.get("img[alt='Subscribe to The Times']");
     } catch (error) {
