@@ -71,10 +71,10 @@ jobs:
           command: |
             npm install
       - run:
-          name: Run the pratices
+          name: Run the practices
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress\e2e\pratic-from-udami-and-SDET\prtaices.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
+            npx cypress run --spec "cypress/e2e/practice-from-udemy-and-SDET/practices.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
 
 workflows:
   version: 2
@@ -85,5 +85,3 @@ workflows:
       - build-and-bdd_test-2
       - build-and-bdd_test-3
       - build-and-bdd_test-4
-      
-     
