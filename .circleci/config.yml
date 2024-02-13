@@ -74,7 +74,7 @@ jobs:
           name: Run the practices
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress/e2e/practice-from-udemy-and-SDET/practices.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
+            npx cypress run --spec "cypress/e2e/practic-from-udemy-and-SDET/practices.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
 
 workflows:
   version: 2
