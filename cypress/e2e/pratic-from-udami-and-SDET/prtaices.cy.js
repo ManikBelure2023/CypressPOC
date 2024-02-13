@@ -66,7 +66,7 @@ describe('web site menu', () => {
         })
     })
 
-    it.only("video page will appear and play the video-----", () => {
+    it("video page will appear and play the video-----", () => {
         cy.get("#menu-main-menu-1 >:nth-child(7)>a").click().should("be.visible")
         cy.get("#section-landing>.container").find(".article-image")
             .eq(2).find("a").find("img")
