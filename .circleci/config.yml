@@ -75,6 +75,7 @@ jobs:
           command: |
             pwd && ls -ll
             npx cypress run --spec "cypress\e2e\pratic-from-udami-and-SDET\prtaices.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
+
 workflows:
   version: 2
   test-assignment:
