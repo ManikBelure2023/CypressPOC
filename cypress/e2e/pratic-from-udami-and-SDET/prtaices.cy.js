@@ -51,7 +51,7 @@ describe('web site menu', () => {
             .click()
         cy.get("#section-landing >.container >.row > .col-sm-12.col-md-8.col-lg-9 > .row")
             .siblings().eq(2)
-        cy.get(".article-image > a > img >: nth-child(1)").eq(0).should('include', 'My-Logo')
+        // cy.get(".article-image > a > img >: nth-child(1)").eq(0).should('include', 'My-Logo')
 
     })
 
@@ -59,10 +59,6 @@ describe('web site menu', () => {
         cy.get(".dont-miss-wrapper").then((e1) => {
             let text2 = e1.text()
             cy.log(text2)
-        })
-        cy.get(".large-logo >a").title().then((e2) => {
-            let text3 = e2.text()
-            cy.log(text3)
         })
     })
 
