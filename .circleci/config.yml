@@ -76,10 +76,9 @@ jobs:
             pwd && ls -ll
             npx cypress run --spec "cypress/e2e/practice-from-udemy-and-SDET/practices.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
 
-
 workflows:
   version: 2
-  test-assignment-666:
+  test-assignment:
     jobs:
       - build-and-bdd_test
       - build-and-bdd_test-1
