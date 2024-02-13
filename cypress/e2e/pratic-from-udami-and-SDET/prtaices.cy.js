@@ -51,7 +51,6 @@ describe('web site menu', () => {
             .click()
         cy.get("#section-landing >.container >.row > .col-sm-12.col-md-8.col-lg-9 > .row")
             .siblings().eq(2)
-        // cy.get(".article-image > a > img >: nth-child(1)").eq(0).should('include', 'My-Logo')
 
     })
 
@@ -62,15 +61,15 @@ describe('web site menu', () => {
         })
     })
 
-    it("video page will appear and play the video-----", () => {
+    it.only("video page will appear and play the video-----", () => {
         cy.get("#menu-main-menu-1 >:nth-child(7)>a").click().should("be.visible")
         cy.get("#section-landing>.container").find(".article-image")
             .eq(2).find("a").find("img")
             .click({ force: true, timeout: 3000 })
 
         cy.get("div[class='vjs-poster']").click({ force: true })
-        cy.scrollTo("left")
-
+        //cy.get(".vjs-big-play-button").click({ force: true, timeout: 3000})
+       cy.wait(6000)
         cy.get(".social-shares>.share-icons >a")
             .should('be.visible')
             //for open in the same window because cypress not support the mutliple tabs or window 
