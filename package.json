@@ -47,6 +47,7 @@
     "cross-spawn": "^7.0.3",
     "cypress": "^13.6.4",
     "cypress-iframe": "^1.0.1",
+    "cypress-real-events": "^1.11.0",
     "dashdash": "^1.14.1",
     "dayjs": "^1.11.10",
     "debug": "^4.3.4",

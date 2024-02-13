@@ -10,7 +10,7 @@ describe('TLS search and enter text in input', () => {
     });
 
     it('Assert the textbox and type "Mary Beard" to find related articles', () => {
-        try {
+    
             let value1;
             let value2;
 
@@ -40,9 +40,5 @@ describe('TLS search and enter text in input', () => {
              expect(sum).to.equal(38);
             // Alternatively, you can assert against a specific element with expected count
             cy.get('div.tls-search-page__wrapper > :nth-child(2)').should('have.length',1);
-
-        } catch (error) {
-            cy.log("Error in test Scenario-8:", error);
-        }
     });
 });

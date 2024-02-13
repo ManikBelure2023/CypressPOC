@@ -19,6 +19,7 @@ describe("application", () => {
       cy.go('back')// back to parent window or tab
 
    })
+   
 ("different types of dropsown", () => {
       //Check boxes
       cy.visit("https://rahulshettyacademy.com/AutomationPractice/")

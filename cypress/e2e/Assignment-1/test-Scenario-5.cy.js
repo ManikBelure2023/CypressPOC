@@ -12,7 +12,7 @@ describe('TLS website Search Test', () => {
 
   // Test Scenario 5
   it('should search for articles with the specified term', () => {
-    try {
+    
       cy.get(".tls-header-navigation__search-icon").click();
       cy.get(".ais-SearchBox-input[type='search']").invoke('val', '').then(() => {
         const textToType = 'A small like';
@@ -22,14 +22,12 @@ describe('TLS website Search Test', () => {
           cy.get(".ais-SearchBox-input[type='search']").type(char, { delay: 1000 }); // Adjust delay as needed
         });
       });
-    } catch (error) {
-      cy.log('Error in Test Scenario 5:');
-    }
+  
   });
 
   // Test Scenario 6
-  it.only("click the TLS logo", () => {
-    try {
+  it("click the TLS logo", () => {
+   
       let date1;
       let date2;
 
@@ -46,8 +44,6 @@ describe('TLS website Search Test', () => {
       });
 
       expect(date1).to.equal(date2);
-    } catch (error) {
-      cy.log('Error in Test Scenario 5:');
-    }
+    
   });
 });

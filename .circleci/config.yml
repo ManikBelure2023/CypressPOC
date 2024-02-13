@@ -61,6 +61,20 @@ jobs:
             pwd && ls -ll
             npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-8.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
 
+  build-and-bdd_test-4:
+    docker:
+      - image: cypress/base:14.17.0
+    steps:
+      - checkout
+      - run:
+          name: Install Cypress
+          command: |
+            npm install
+      - run:
+          name: Run the pratices
+          command: |
+            pwd && ls -ll
+            npx cypress run --spec "cypress\e2e\pratic-from-udami-and-SDET\prtaices.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
 workflows:
   version: 2
   test-assignment:
@@ -69,4 +83,6 @@ workflows:
       - build-and-bdd_test-1
       - build-and-bdd_test-2
       - build-and-bdd_test-3
+      - build-and-bdd_test-4
+      
      

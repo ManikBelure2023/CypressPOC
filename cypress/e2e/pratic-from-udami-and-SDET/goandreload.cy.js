@@ -1,8 +1,6 @@
 describe("application", () => {
 
     it("csslocator", () => {
-        console.log('before')
-
         cy.visit('https://demo.opencart.com/')
         
         console.log('after')
