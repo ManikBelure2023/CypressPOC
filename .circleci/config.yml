@@ -14,7 +14,7 @@ jobs:
           name: Run the assignment-testcase
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
+            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --browser electron --env url="https://www.uat-driving.co.uk/"
 
   build-and-bdd_test-1:
     docker:
@@ -29,7 +29,7 @@ jobs:
           name: Run the assignment-1-testcase
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-5.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
+            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-5.cy.js" --browser electron --env url="https://www.the-tls.co.uk/"
   
   build-and-bdd_test-2:
     docker:
@@ -44,7 +44,7 @@ jobs:
           name: Run the assignment-2-testcase
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
+            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-7.cy.js" --browser electron --env url="https://www.the-tls.co.uk/"
 
   build-and-bdd_test-3:
     docker:
@@ -59,7 +59,7 @@ jobs:
           name: Run the assignment-3-testcase
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-8.cy.js" --headed --browser electron --env url="https://www.the-tls.co.uk/"
+            npx cypress run --spec "cypress/e2e/Assignment-1/test-Scenario-8.cy.js" --browser electron --env url="https://www.the-tls.co.uk/"
 
   build-and-bdd_test-4:
     docker:
@@ -74,7 +74,7 @@ jobs:
           name: Run the practices
           command: |
             pwd && ls -ll
-            npx cypress run --spec "cypress\e2e\pratic-from-udami-and-SDET\prtaices.cy.js" --headed --browser electron --env url="https://www.uat-driving.co.uk/"
+            npx cypress run --spec "cypress\e2e\pratic-from-udami-and-SDET\prtaices.cy.js" --browser electron --env url="https://www.uat-driving.co.uk/"
 
 workflows:
   version: 2
