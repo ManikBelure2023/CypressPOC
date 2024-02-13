@@ -60,8 +60,8 @@ describe('web site menu', () => {
             let text2 = e1.text()
             cy.log(text2)
         })
-        cy.get(".large-logo >a").title().then((el3) => {
-            let text3 = el3.text()
+        cy.get(".large-logo >a").title().then((e2) => {
+            let text3 = e2.text()
             cy.log(text3)
         })
     })
