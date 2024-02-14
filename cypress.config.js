@@ -1,11 +1,6 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  chromeWebSecurity: false,
-  pageLoadTimeout: 150000,
-  defaultCommandTimeout:80000,
-  viewportWidth:1280,
-  viewportHeight:720,
 
   e2e: {
     setupNodeEvents(on, config) {
@@ -16,7 +11,11 @@ module.exports = defineConfig({
      specPattern: 'cypress/e2e/*/*.js', 
     //for this indiviual test folder to execute
     // specPattern: 'cypress/e2e/Assignment-1/*.js',
-       
+    chromeWebSecurity: false,
+    pageLoadTimeout: 150000,
+    defaultCommandTimeout:80000,
+    viewportWidth:1280,
+    viewportHeight:720,
     baseUrl:"https://www.uat-driving.co.uk/",
     userBaseUrl:"https://www.the-tls.co.uk/"
 
